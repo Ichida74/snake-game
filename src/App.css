@@ -1,0 +1,225 @@
+body {
+    font-family: 'Ma Shan Zheng', cursive;
+    text-align: center;
+    background: #578a34;
+    color: #ffffff;
+}
+
+.game-header {
+    margin: 35px 0;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.button {
+    border: none;
+    background: #317B22;
+    padding: 8px 24px;
+    border-radius: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+
+.pointsWrapper {
+    width: 30em;
+    margin: 35px auto;
+    text-align: left;
+    display: flex;
+}
+
+.pointWrapper {
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.pointHelper {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.eggPoint {
+    background: #ffffff;
+}
+
+.bestPoint {
+    background: yellow;
+}
+
+.pointCount {
+    font-size: 22px;
+}
+
+.arena {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 30px;
+}
+
+.cell {
+    width: 3em;
+    height: 3em;
+    background: #aad751;
+}
+.cell.even {
+    background: #a2d149;
+}
+
+.egg {
+    background: #ffffff;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+}
+
+.snake {
+    width: 3em;
+    height: 3em;
+    background: #4370e5;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.snake.head:before,
+.snake.head:after {
+    content: '';
+    position: absolute;
+    width: 0.2em;
+    height: 0.2em;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.snake.right {
+    border-top-right-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.snake.right.head:before,
+.snake.right.head:after {
+    right: 1em;
+}
+
+.snake.right.head:before,
+.snake.left.head:before {
+    top: 0.8em;
+}
+
+.snake.right.head:after,
+.snake.left.head:after {
+    bottom: 0.8em;
+}
+
+.snake.left {
+    border-top-left-radius: 1.5em;
+    border-bottom-left-radius: 1.5em;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.snake.left.head:before,
+.snake.left.head:after {
+    left: 1em;
+}
+
+.snake.up {
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.snake.up.head:before,
+.snake.up.head:after {
+    top: 1em;
+}
+
+.snake.up.head:before,
+.snake.down.head:before {
+    left: 0.8em;
+}
+
+.snake.up.head:after,
+.snake.down.head:after {
+    right: 0.8em;
+}
+
+.snake.down {
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.snake.down.head:before,
+.snake.down.head:after {
+    bottom: 1em;
+}
+
+.snake.top-to-bottom {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.snake.left-to-right {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.snake.top-to-left {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.snake.top-to-right {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.snake.bottom-to-left {
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.snake.bottom-to-right {
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.snake.left-to-bottom {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.snake.left-to-top {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.snake.right-to-bottom {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.snake.right-to-top {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.result {
+    font-size: 30px;
+    color: #ffffff;
+}
